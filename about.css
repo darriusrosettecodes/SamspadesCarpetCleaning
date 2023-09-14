@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.navbar a{
+    font-size: 23px;
+    color: green;
+    padding: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+.navbar .active{
+    color:rgb(0, 45, 0);
+}
+.navbar a:hover {
+    color: rgb(0, 45, 0);
+}
+.navbar .button{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    transition: .3s;
+}
+.navbar .button:hover{
+    background-color:rgb(0, 45, 0) ;
+    color: white;
+}
+.header img{
+    width: 100px;
+}
+.contact button{
+    color: green;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.main{
+    background-color: white;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.371), rgba(0, 0, 0, 0.365)), url('main2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 600px;
+}
+.maincont{
+    color: white;
+    text-shadow: 1px 0px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+
+}
+.maincont h1{
+    font-size: 50px;
+}
+.maincont p{
+    font-size: 20px;
+    margin: 15px 0px 0px 0px;
+}
+.aboutsection{
+    margin: 100px 0px;
+    text-align: center;
+}
+.aboutsection img{
+    height: 290px;
+    width: 340px;
+}
+.aboutsection p{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0px;
+}
+.footer{
+    background-color:rgb(175, 175, 175);
+    color: green;
+    text-align: center;
+    min-height: 170px;
+    padding:10px;
+}
+.contactinfo a{
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-size:20px;
+    padding: 10px;
+}
+.socials i{
+    color: blue;
+    font-size: 45px;
+}
+@media screen and (max-width: 620px) {
+    .header {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Align items to the left */
+      text-align: center;
+    }
+  
+    .navbar {
+      margin-top: 10px; /* Add spacing between logo and links */
+    }
+  
+    .navbar a {
+      padding: 10px;
+      margin-left: 0; /* Reset margin for links */
+      display: block; /* Display links as block elements */
+      margin-bottom: 10px; /* Add vertical spacing between links */
+    }
+    .header img{
+        width: 100px;
+        padding: 0;
+    }
+}

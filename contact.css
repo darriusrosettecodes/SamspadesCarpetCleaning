@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.reglink{
+    font-size: 23px;
+    color: green;
+    padding: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+.reglink:hover {
+    color: rgb(0, 45, 0);
+}
+.active{
+    font-size: 23px;
+    text-decoration: none;
+    background-color:rgb(0, 45, 0) ;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.header img{
+    width: 100px;
+}
+.main{
+    background-color: white;
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.371), rgba(0, 0, 0, 0.365)), url('main5.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+.maincont{
+    color: white;
+    text-shadow: 1px 0px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+
+}
+.maincont h1{
+    font-size: 50px;
+}
+.maincont p{
+    font-size: 20px;
+    margin: 15px 0px 0px 0px;
+}
+.contactsection{
+    margin: 100px 0px;
+    text-align: center;
+}
+.contactsection h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 40px 0px;
+}
+.contactsection p{
+    color: green;
+    font-size: 25px;
+    margin-bottom:15px ;
+}
+.form input{
+    margin: 20px 10px;
+    height: 50px;
+    width: 250px;
+    border: 5px solid green;
+}
+#name, 
+#email{
+    width: 30%;
+}
+#subject{
+    width: 62%;
+}
+#message{
+    width:62%;
+    min-height: 100px;
+    resize: both;
+}
+.form button{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 8px;
+    transition: .3s;
+}
+.form button:hover{
+    background-color: rgb(0, 45, 0);
+}
+.footer{
+    background-color:rgb(175, 175, 175);
+    color: green;
+    text-align: center;
+    min-height: 170px;
+    padding:10px;
+}
+.contactinfo a{
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-size:20px;
+    padding: 10px;
+}
+.socials i{
+    color: blue;
+    font-size: 45px;
+}
+@media screen and (max-width: 620px) {
+    .header {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Align items to the left */
+      text-align: center;
+    }
+  
+    .navbar {
+      margin-top: 10px; /* Add spacing between logo and links */
+    }
+  
+    .navbar a {
+      padding: 10px;
+      margin-left: 0; /* Reset margin for links */
+      display: block; /* Display links as block elements */
+      margin-bottom: 10px; /* Add vertical spacing between links */
+    }
+    .header img{
+        width: 100px;
+        padding: 0;
+    }
+}
