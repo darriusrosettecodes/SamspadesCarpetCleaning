@@ -140,3 +140,11 @@
         padding: 0;
     }
 }
+@media screen and (max-width: 714px){
+    .maincont h1{
+        font-size: 35px;
+    }
+    .maincont p{
+        font-size: 20px;
+    }
+}
